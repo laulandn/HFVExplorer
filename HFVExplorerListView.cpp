@@ -395,7 +395,7 @@ int CHFVExplorerListView::Initialize()
 	lvcolumn.cx = 85;
 	m_cl->InsertColumn(FIELD_LABEL, &lvcolumn);
 
-	// this is no limit, just allocates this much instead of small pieces
+	// this is no limit, just allocates this much instead of Small pieces
 	m_cl->SetItemCount( 500 ); 
   
 	// CreatePalette();
@@ -1611,7 +1611,7 @@ int CHFVExplorerListView::new_bowser_on( CString start_dir )
 
 void make_configur_path( char *cmd, CString *ppath, CString &creator )
 {
-	char small[10];
+	char Small[10];
 	char name[300];
 	unsigned char *cr;
 	char *p;
@@ -1627,8 +1627,8 @@ void make_configur_path( char *cmd, CString *ppath, CString &creator )
 			strcat( name, "\\CONFIGUR\\" );
 			cr = (unsigned char *)creator.GetBuffer(MAX_PATH);
 			for(i=0; i<4; i++) {
-				sprintf( small, "%02x", (int)cr[i] );
-				strcat( name, small );
+				sprintf( Small, "%02x", (int)cr[i] );
+				strcat( name, Small );
 			}
 			creator.ReleaseBuffer();
 			strcat( name, ".ECF" );
@@ -1710,7 +1710,7 @@ void try_patch_bpp( char *cmd, CString &creator )
 
 	make_configur_path( cmd, &path, creator );
 	if(path != "" && do_open_file( &f, path )) {
-		DWORD nCount = f.GetLength();
+		ULONGLONG nCount = f.GetLength();
 		int bytes_read;
 		char *lpBuf = new char[nCount+100];
 		if(lpBuf) {

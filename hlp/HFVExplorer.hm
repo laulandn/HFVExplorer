@@ -21,6 +21,7 @@ HID_EDIT_COPY_APPEND                    0x18020
 HID_EDIT_CUT_APPEND                     0x18021
 HID_FILE_EJECT                          0x18022
 HID_FILE_RELOAD                         0x18023
+HID_TOOLS_BURN                          0x18024
  
 // Prompts (IDP_*) 
  
@@ -47,6 +48,7 @@ HIDD_FILETYPE_MAPPINGS                  0x200A2
 HIDD_OPTIONS_PAGE_7                     0x200A3
 HIDD_OPTIONS_PAGE_8                     0x200A4
 HIDD_OPTIONS_PAGE_9                     0x200A6
+HIDD_OPTIONS_PAGE_10                    0x200A7
 HIDD_STATIC                             0x203FF
  
 // Frame Controls (IDW_*) 

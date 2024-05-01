@@ -119,7 +119,7 @@ protected: // create from serialization only
 		LongInt type_to_check,
 		int nocheck,
 		Integer id_to_check );
-	HICON mac_load_icon( int volinx, CatDataRec *pCDR, int small );
+	HICON mac_load_icon( int volinx, CatDataRec *pCDR, int Small );
 	void open_parent_directory( unsigned long id );
 	CString get_directory( HTREEITEM hItem, int *pmac );
 	int my_split_path( CString path, CString &volname, int *volinx, CString &dir, int mac );
@@ -177,13 +177,13 @@ protected: // create from serialization only
 		int volinx, 
 		CatDataRec *pCDR,
 		Integer id, 
-		int small,
+		int Small,
 		local_icn_sharp_t *dat );
 	void mac_load_icon3( 
 		CFile *fp,
 		unsigned long g_offset,
 		Integer id, 
-		int small,
+		int Small,
 		local_icn_sharp_t *dat );
 	void init_hash_table();
 	void clear_hash_table();

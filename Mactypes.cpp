@@ -540,10 +540,10 @@ BOOL CDSKFile::GetStatus(CFileStatus& rStatus)
 	return(CFile::GetStatus(rStatus));
 }
 
-LONG CDSKFile::Seek(LONG lOff, UINT nFrom)
+LONGLONG CDSKFile::Seek(LONG lOff, UINT nFrom)
 {
-	LONG sz;
-	long new_seek;
+	LONGLONG sz;
+	long long new_seek;
 
 	if(m_drive != IS_NO_FLOPPY) {
 		if(m_hfloppy || m_hcd || m_hd) {
@@ -598,7 +598,7 @@ UINT CDSKFile::Read(void* lpBuf, UINT nCount)
 	return(CFile::Read(lpBuf, nCount));
 }
 
-DWORD CDSKFile::GetLength()
+ULONGLONG CDSKFile::GetLength()
 {
 	if(m_drive != IS_NO_FLOPPY) {
 		if(m_hfloppy) {
@@ -642,7 +642,7 @@ void CHFVFile::Close()
 	m_opened = 0;
 }
 
-LONG CHFVFile::Seek( LONG lOff, UINT nFrom )
+LONGLONG CHFVFile::Seek( LONG lOff, UINT nFrom )
 {
 	if(!m_opened) return(0);
 

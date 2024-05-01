@@ -71,14 +71,14 @@ static void init_is_Win95(void)
 		}
 	}
 }
-void rotate_buffer( unsigned char *p, int bytes, int small )
+void rotate_buffer( unsigned char *p, int bytes, int Small )
 {
 	int y, w, w2;
 	unsigned char *s1;
 	unsigned char *s2;
 	char line[100];
 
-	w = small ? 16 : 32;
+	w = Small ? 16 : 32;
 	w2 = w >> 1;
 	s1 = p;
 	s2 = p + bytes - w;
@@ -931,9 +931,9 @@ void przuksis( unsigned char *a, unsigned char *b )
 // creates icon from raw data.
 // raw data is imported/exported in p,
 // mask data is in cim.
-HICON map_colors( unsigned char *p, int small, int count, unsigned char **cim )
+HICON map_colors( unsigned char *p, int Small, int count, unsigned char **cim )
 {
-	int dim = small ? 16 : 32;
+	int dim = Small ? 16 : 32;
 	HICON hicon = 0;
 	ICONINFO pico;
 	HDC hDC;
@@ -1031,7 +1031,7 @@ HICON map_colors( unsigned char *p, int small, int count, unsigned char **cim )
 			 );
 			LONG result = SetBitmapBits( bmp_mask, count, mask_bits );
 		} else {
-			if(small) {
+			if(Small) {
 				aligned_mask = (unsigned char *)malloc( ENOUGH );
 				if(aligned_mask) {
 					przuksis( mask_bits, aligned_mask );
@@ -1055,7 +1055,7 @@ HICON map_colors( unsigned char *p, int small, int count, unsigned char **cim )
 		}
 		pico.hbmMask = bmp_mask;
 	} else {
-	  pico.hbmMask = small ? mac_mask16 : mac_mask32;
+	  pico.hbmMask = Small ? mac_mask16 : mac_mask32;
 	}
   pico.fIcon = 1;
   pico.yHotspot = pico.xHotspot = dim>>1;
@@ -1064,7 +1064,7 @@ HICON map_colors( unsigned char *p, int small, int count, unsigned char **cim )
 	hicon = CreateIconIndirect( &pico );
 
 #ifdef _DEBUG
-	if(!small) {
+	if(!Small) {
 		dump_icon_hdc( hDC, hicon );
 	}
 #endif

@@ -37,7 +37,7 @@ void negate_buffer( unsigned char *p, int count );
 // Explorer-style: if old DOS name: NAME5678.EXT -> Name5678.ext
 void dos_lfn( unsigned char *name );
 void dos_lfn_fdata( WIN32_FIND_DATA *fd );
-void rotate_buffer( unsigned char *p, int bytes, int small );
+void rotate_buffer( unsigned char *p, int bytes, int Small );
 
 // file name, pc
 int is_valid_8_3_name( unsigned char *name );
@@ -58,7 +58,7 @@ int do_open_file( CFile *fp, CString name );
 int do_open_readwrite( CFile *fp, CString name );
 
 // color
-HICON map_colors( unsigned char *p, int small, int count, unsigned char **cim );
+HICON map_colors( unsigned char *p, int Small, int count, unsigned char **cim );
 void init_map_palette();
 HBITMAP create_mask_bitmap(int count);
 void delete_mask_bitmaps();

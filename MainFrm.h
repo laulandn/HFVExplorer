@@ -21,7 +21,7 @@
 #ifndef _MAINFRM_DEFINED
 #define _MAINFRM_DEFINED
 
-int ask_new_volume( char *volpath, char *vname, int *psize, int *normal );
+int ask_new_volume( char *volpath, char *vname, ULONGLONG *psize, int *normal );
 
 #define MYTIMERID 123
 
@@ -119,7 +119,7 @@ protected:
 	afx_msg void OnViewList();
 	afx_msg void OnViewSmallicons();
 	afx_msg void OnViewOptions();
-	afx_msg void OnActivateApp(BOOL bActive, HTASK hTask);
+	afx_msg void OnActivateApp(BOOL bActive, DWORD hTask);
 	afx_msg void OnTimer(UINT nIDEvent);
 	afx_msg BOOL OnQueryNewPalette();
 	afx_msg void OnPaletteChanged(CWnd* pFocusWnd);
