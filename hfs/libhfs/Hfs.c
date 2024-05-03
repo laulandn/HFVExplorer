@@ -448,7 +448,7 @@ int hfs_format(char *path, int pnum, char *vname)
   hfsvol vol;
   btree *ext = &vol.ext;
   btree *cat = &vol.cat;
-  unsigned long long vbmsz;
+  unsigned int vbmsz;
   int i, result = 0;
   block vbm[16];
   char *map;
@@ -511,22 +511,14 @@ int hfs_format(char *path, int pnum, char *vname)
     }
   else  /* determine size of entire device */
     {
-      unsigned long long low, high, mid;
+      unsigned long low, high, mid;
       block b;
 
-      for (low = 0, high = 2879; b_readlb(&vol, high, &b) >= 0; high *= 2) {
-        printf("low is %ld\n",low);
+      for (low = 0, high = 2879; b_readlb(&vol, high, &b) >= 0; high *= 2)
 	low = high;
-      }
-
-  if(!low) {
-    printf("size calc went wrong, low is 0!!!\n");
-    exit(0);
-  }
 
       while (low < high - 1)
 	{
-          printf("low is %ld mid is %ld high is %ld\n",low,mid,high);
 	  mid = (low + high) / 2;
 
 	  if (b_readlb(&vol, mid, &b) < 0)
@@ -538,15 +530,10 @@ int hfs_format(char *path, int pnum, char *vname)
       vol.vlen = low + 1;
     }
 
-  if(vol.vlen==1) {
-    printf("size calc went wrong, low is 1!!!\n");
-    exit(0);
-  }
-
   if (vol.vlen < 800 * (1024 >> HFS_BLOCKSZ_BITS))
     {
       close(vol.fd);
-      printf("vol.vlen was %ld\n",vol.vlen);
+
       ERROR(EINVAL, "volume size must be >= 800K");
       return -1;
     }
@@ -1401,10 +1388,10 @@ int hfs_truncate(hfsfile *file, unsigned long len)
  * NAME:	hfs->lseek()
  * DESCRIPTION:	change file seek pointer
  */
-long long hfs_lseek(hfsfile *file, long long offset, int from)
+long hfs_lseek(hfsfile *file, long offset, int from)
 {
   unsigned long *lglen;
-  long long newpos;
+  long newpos;
 
   f_getptrs(file, &lglen, 0, 0);
 

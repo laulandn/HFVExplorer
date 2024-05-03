@@ -23,6 +23,7 @@
 #include <winnetwk.H>
 #include <shlobj.h>
 #include "shell.h"
+#include <winnls.h>
 
 // My old age and have to learn the f* ole...but I did it
 

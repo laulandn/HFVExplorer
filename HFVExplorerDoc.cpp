@@ -157,8 +157,7 @@ int check_zero_size( char *lpszPathName )
 	DWORD sizelo, sizehi;
 	HANDLE hFile;
 	char vname[_MAX_PATH];
-	ULONGLONG file_size;
-  int init;
+	int file_size, init;
 
 	if(lpszPathName && *lpszPathName) {
 		hFile = CreateFile(
@@ -1548,7 +1547,7 @@ HANDLE CHFVExplorerDoc::mac_load_any_resource2(
 
 // #include "bndl.cpp"
 
-HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int Small )
+HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int small )
 {
 	HICON hicon = 0;
 	HANDLE h = 0;
@@ -1556,13 +1555,13 @@ HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int Small )
 
 	int iscolor = 0;
 
-	dim = Small ? 16 : 32;
+	dim = small ? 16 : 32;
 
 	if(pCDR->u.f.filUsrWds.fdFlags & kHasBundle) {
 		if(m_bits_per_pixel >= 8) {
 			h = mac_load_any_resource ( 
 						volinx, pCDR,
-						Small ? (unsigned long)'ics8' :	(unsigned long)'icl8',
+						small ? (unsigned long)'ics8' :	(unsigned long)'icl8',
 						1, 0 );
 		}
 		if(h) {
@@ -1571,7 +1570,7 @@ HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int Small )
 			h = mac_load_any_resource( 
 						volinx,
 						pCDR,
-						Small ? (unsigned long)'ics#' : (unsigned long)'ICN#',
+						small ? (unsigned long)'ics#' : (unsigned long)'ICN#',
 						1, 0 );
 		}
 		
@@ -1584,7 +1583,7 @@ HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int Small )
 				unsigned char mask[COLORICONSIZE+100];
 				int bytes;
 
-				bytes = Small ? (COLORICONSIZE>>2) : COLORICONSIZE;
+				bytes = small ? (COLORICONSIZE>>2) : COLORICONSIZE;
 				memset( mask, 0, bytes );
 				negate_buffer( (unsigned char *)p, bytes );
 
@@ -1605,9 +1604,9 @@ HICON CHFVExplorerDoc::mac_load_icon( int volinx, CatDataRec *pCDR, int Small )
 				);
 			} else {
 				int half;
-				negate_buffer( (unsigned char *)p, Small ? (BW_ICONSIZE>>2) : BW_ICONSIZE );
+				negate_buffer( (unsigned char *)p, small ? (BW_ICONSIZE>>2) : BW_ICONSIZE );
 				half = (BW_ICONSIZE>>1);
-				if(Small) half = (BW_ICONSIZE>>3);
+				if(small) half = (BW_ICONSIZE>>3);
 				hicon = CreateIcon( 
 					pApp->m_hInstance, dim, dim, 1, 1, 
 					(unsigned char *)p,

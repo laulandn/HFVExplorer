@@ -33,8 +33,8 @@ typedef struct {
   char name[HFS_MAX_VLEN + 1];	/* name of volume */
   int flags;			/* volume flags */
 
-  unsigned long long totbytes;	/* total bytes on volume */
-  unsigned long long freebytes;	/* free bytes on volume */
+  unsigned long totbytes;	/* total bytes on volume */
+  unsigned long freebytes;	/* free bytes on volume */
 
   unsigned long alblocksz;	/* volume allocation block size */
   unsigned long clumpsz;	/* default file clump size */
@@ -66,8 +66,8 @@ typedef struct {
 
   union {
     struct {
-      unsigned long long dsize;	/* size of data fork */
-      unsigned long long rsize;	/* size of resource fork */
+      unsigned long dsize;	/* size of data fork */
+      unsigned long rsize;	/* size of resource fork */
 
       char type[5];		/* file type code (plus null) */
       char creator[5];		/* file creator code (plus null) */
@@ -139,7 +139,7 @@ int hfs_getfork(hfsfile *);
 long hfs_read(hfsfile *, void *, unsigned long);
 long hfs_write(hfsfile *, void *, unsigned long);
 int hfs_truncate(hfsfile *, unsigned long);
-long long hfs_lseek(hfsfile *, long long, int);
+long hfs_lseek(hfsfile *, long, int);
 int hfs_close(hfsfile *);
 
 int hfs_stat(hfsvol *, char *, hfsdirent *);

@@ -485,7 +485,7 @@ void CMainFrame::OnViewOptions()
 	OnProgramProperties();
 }
 
-void CMainFrame::OnActivateApp(BOOL bActive, DWORD hTask) 
+void CMainFrame::OnActivateApp(BOOL bActive, HTASK hTask) 
 {
 	CFrameWnd::OnActivateApp(bActive, hTask);
 	
@@ -810,7 +810,7 @@ LRESULT CMainFrame::WindowProc(UINT message, WPARAM wParam, LPARAM lParam)
 	return CFrameWnd::WindowProc(message, wParam, lParam);
 }
 
-int ask_new_volume( char *volpath, char *vname, ULONGLONG *psize, int *normal )
+int ask_new_volume( char *volpath, char *vname, int *psize, int *normal )
 {
 	CAskNewVolume dlg;
 	int ret, drive;
@@ -831,10 +831,10 @@ int ask_new_volume( char *volpath, char *vname, ULONGLONG *psize, int *normal )
 			if(toupper(*s) == 'M') *psize *= (1024*1024);
 			else if(toupper(*s) == 'K') *psize *= (1024);
 			else if(toupper(*s) == 'G') {
-				/*if(*psize > 2) {
+				if(*psize > 2) {
 					AfxMessageBox( "File size limited to 2 GB." );
 					*psize = 2;
-				}*/ 
+				} 
 				*psize *= (1024*1024*1024);
 			}
 		}
@@ -855,7 +855,7 @@ int ask_new_volume( char *volpath, char *vname, ULONGLONG *psize, int *normal )
 			if(!is_hfs) is_any = is_any_floppy_present( drive );
 			if(is_any) {
 				CString cs;
-				ULONGLONG maxsize = get_floppy_max_size(drive);
+				int maxsize = get_floppy_max_size(drive);
 				if(maxsize == 0) {
 					ret = 0;
 				} if(maxsize == *psize) {
@@ -1003,8 +1003,7 @@ void CMainFrame::OnFileNewvolume()
 	char vname[MAX_PATH];
 	CHFVExplorerApp	*pApp;
 	CString currdir = "";
-	ULONGLONG size;
-  int init;
+	int size, init;
 
 	pApp = (CHFVExplorerApp *)AfxGetApp();
 
@@ -1025,9 +1024,9 @@ void CMainFrame::OnFileNewvolume()
 	if(currdir != "") pApp->m_doc->my_chdir( currdir, 1 );
 }
 
-ULONGLONG get_file_size( const char *volpath )
+int get_file_size( const char *volpath )
 {
-	ULONGLONG l = 0;
+	int l = 0;
 	CFile file;
 
 	if(do_open_file( &file, volpath )) {

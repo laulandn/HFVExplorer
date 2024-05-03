@@ -31,7 +31,6 @@
 # include <errno.h>
 # include <time.h>
 
-#define DEBUG 1
 # ifdef DEBUG
 # include <stdio.h>
 # endif
@@ -179,11 +178,9 @@ int getblock(hfsvol *vol, unsigned long bnum, block *bp)
 # ifdef DEBUG
   printf("READ: vol 0x%x block %lu\n", (unsigned int) vol, bnum);
 # endif
-  
-  printf("Going to try lseek %ld\n",(vol->vstart+bnum)<<HFS_BLOCKSZ_BITS);
+
   if (lseek(vol->fd, (vol->vstart + bnum) << HFS_BLOCKSZ_BITS, SEEK_SET) < 0)
     {
-      printf("error seeking device\n");
       ERROR(errno, "error seeking device");
       return -1;
     }
@@ -192,19 +189,16 @@ int getblock(hfsvol *vol, unsigned long bnum, block *bp)
 
   if (bytes < 0)
     {
-      printf("error reading device\n");
       ERROR(errno, "error reading from device");
       return -1;
     }
   else if (bytes == 0)
     {
-      printf("error eof\n");
       ERROR(EIO, "read EOF on volume");
       return -1;
     }
   else if (bytes != HFS_BLOCKSZ)
     {
-      printf("error incomp block\n");
       ERROR(EIO, "read incomplete block");
       return -1;
     }
@@ -225,7 +219,6 @@ int putblock(hfsvol *vol, unsigned long bnum, block *bp)
   printf("WRITE: vol 0x%x block %lu\n", (unsigned int) vol, bnum);
 # endif
 
-  printf("Going to try lseek %ld\n",(vol->vstart+bnum)<<HFS_BLOCKSZ_BITS);
   if (lseek(vol->fd, (vol->vstart + bnum) << HFS_BLOCKSZ_BITS, SEEK_SET) < 0)
     {
       ERROR(errno, "error seeking device");
@@ -449,23 +442,17 @@ int b_readlb(hfsvol *vol, unsigned long bnum, block *bp)
 {
   int found;
   bucket *b;
-  printf("b_readlb bnum=%ld\n",bnum);
-  if (vol->cache == 0) {
-    printf("b_readlb doing getblock\n");
+
+  if (vol->cache == 0)
     return getblock(vol, bnum, bp);
-  }
 
   found = findbucket(vol->cache, bnum, &b);
-  if (found < 0) {
-    printf("b_readlb found<0\n");
+  if (found < 0)
     return -1;
-  }
 
   if (! found &&
-      getbucket(vol, b) < 0) {
-    printf("b_readlb !found<0 and getbucket<0\n");
+      getbucket(vol, b) < 0)
     return -1;
-  }
 
   memcpy(bp, b->data, HFS_BLOCKSZ);
 

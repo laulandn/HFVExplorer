@@ -1,0 +1,243 @@
+--------------------Configuration: HFVExplorer - Win32 Release--------------------
+Begining build with project "C:\HFVExplorer_1.3.1_vs5\HFVExplorer.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /Ot /Oi /Ob2 /D "__EMX__" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Release/" /Fp".\Release/HFVExplorer.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x40b /fo".\Release/HFVExplorer.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o".\Release/HFVExplorer.bsc" "
+			"COFF Linker for 80x86" with flags "winmm.lib /nologo /subsystem:windows /incremental:no /pdb:".\Release/HFVExplorer.pdb" /machine:I386 /out:".\Release/HFVExplorer.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.bat" with contents <@echo off
+".\makehelp.bat"
+>
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.bat" 
+Creating command line "rc.exe /l 0x40b /fo".\Release/HFVExplorer.res" /d "NDEBUG" "C:\HFVExplorer_1.3.1_vs5\HFVExplorer.rc"" 
+Making help file...
+Building Win32 Help files
+
+The system cannot find the file specified.
+The system cannot find the file specified.
+
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" with contents </nologo /MT /W3 /GX /Ot /Oi /Ob2 /D "__EMX__" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Release/" /Fp".\Release/HFVExplorer.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c 
+"C:\HFVExplorer_1.3.1_vs5\AskDir.cpp"
+"C:\HFVExplorer_1.3.1_vs5\AskDump.cpp"
+"C:\HFVExplorer_1.3.1_vs5\AskNewVolume.cpp"
+"C:\HFVExplorer_1.3.1_vs5\AskProperties.cpp"
+"C:\HFVExplorer_1.3.1_vs5\AskVolumeToFloppy.cpp"
+"C:\HFVExplorer_1.3.1_vs5\aspecial.c"
+"C:\HFVExplorer_1.3.1_vs5\Bndl.cpp"
+"C:\HFVExplorer_1.3.1_vs5\cache.cpp"
+"C:\HFVExplorer_1.3.1_vs5\CFATVolume.cpp"
+"C:\HFVExplorer_1.3.1_vs5\charset.c"
+"C:\HFVExplorer_1.3.1_vs5\DynCopyModeSelect.cpp"
+"C:\HFVExplorer_1.3.1_vs5\eject_nt.cpp"
+"C:\HFVExplorer_1.3.1_vs5\eject_w95.cpp"
+"C:\HFVExplorer_1.3.1_vs5\FileTypeMapping.cpp"
+"C:\HFVExplorer_1.3.1_vs5\floppy.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVCommandLineInfo.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVExplorer.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVExplorerDoc.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVExplorerListView.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVExplorerTreeView.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVExplorerView.cpp"
+"C:\HFVExplorer_1.3.1_vs5\HFVPreviewView.cpp"
+"C:\HFVExplorer_1.3.1_vs5\icon.cpp"
+"C:\HFVExplorer_1.3.1_vs5\mactypes.cpp"
+"C:\HFVExplorer_1.3.1_vs5\MainFrm.cpp"
+"C:\HFVExplorer_1.3.1_vs5\openfile.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage1.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage10.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage2.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage3.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage4.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage5.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage6.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage7.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage8.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsPage9.cpp"
+"C:\HFVExplorer_1.3.1_vs5\OptionsSheet.cpp"
+"C:\HFVExplorer_1.3.1_vs5\part.cpp"
+"C:\HFVExplorer_1.3.1_vs5\shell.cpp"
+"C:\HFVExplorer_1.3.1_vs5\special.cpp"
+"C:\HFVExplorer_1.3.1_vs5\utils.cpp"
+"C:\HFVExplorer_1.3.1_vs5\vmacpatch.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\binhex.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\block.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\btree.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\copyhfs.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\copyin.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\copyout.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\crc.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\data.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\file.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\hcopy.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\hcwd.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\low.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\node.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\record.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\volume.c"
+"C:\HFVExplorer_1.3.1_vs5\filehook.c"
+"C:\HFVExplorer_1.3.1_vs5\hfs\interface.c"
+"C:\HFVExplorer_1.3.1_vs5\sys\ntcd.cpp"
+"C:\HFVExplorer_1.3.1_vs5\vxdiface.c"
+>
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" 
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents </nologo /MT /W3 /GX /Ot /Oi /Ob2 /D "__EMX__" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Release/" /Fp".\Release/HFVExplorer.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"C:\HFVExplorer_1.3.1_vs5\StdAfx.cpp"
+>
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" 
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" with contents <winmm.lib /nologo /subsystem:windows /incremental:no /pdb:".\Release/HFVExplorer.pdb" /machine:I386 /out:".\Release/HFVExplorer.exe" 
+.\Release\AskDir.obj
+.\Release\AskDump.obj
+.\Release\AskNewVolume.obj
+.\Release\AskProperties.obj
+.\Release\AskVolumeToFloppy.obj
+.\Release\aspecial.obj
+.\Release\Bndl.obj
+.\Release\cache.obj
+.\Release\CFATVolume.obj
+.\Release\charset.obj
+.\Release\DynCopyModeSelect.obj
+.\Release\eject_nt.obj
+.\Release\eject_w95.obj
+.\Release\FileTypeMapping.obj
+.\Release\floppy.obj
+.\Release\HFVCommandLineInfo.obj
+.\Release\HFVExplorer.obj
+.\Release\HFVExplorerDoc.obj
+.\Release\HFVExplorerListView.obj
+.\Release\HFVExplorerTreeView.obj
+.\Release\HFVExplorerView.obj
+.\Release\HFVPreviewView.obj
+.\Release\icon.obj
+.\Release\mactypes.obj
+.\Release\MainFrm.obj
+.\Release\openfile.obj
+.\Release\OptionsPage1.obj
+.\Release\OptionsPage10.obj
+.\Release\OptionsPage2.obj
+.\Release\OptionsPage3.obj
+.\Release\OptionsPage4.obj
+.\Release\OptionsPage5.obj
+.\Release\OptionsPage6.obj
+.\Release\OptionsPage7.obj
+.\Release\OptionsPage8.obj
+.\Release\OptionsPage9.obj
+.\Release\OptionsSheet.obj
+.\Release\part.obj
+.\Release\shell.obj
+.\Release\special.obj
+.\Release\StdAfx.obj
+.\Release\utils.obj
+.\Release\vmacpatch.obj
+.\Release\binhex.obj
+.\Release\block.obj
+.\Release\btree.obj
+.\Release\copyhfs.obj
+.\Release\copyin.obj
+.\Release\copyout.obj
+.\Release\crc.obj
+.\Release\data.obj
+.\Release\file.obj
+.\Release\hcopy.obj
+.\Release\hcwd.obj
+.\Release\hfs.obj
+.\Release\low.obj
+.\Release\node.obj
+.\Release\record.obj
+.\Release\volume.obj
+.\Release\filehook.obj
+.\Release\interface.obj
+.\Release\ntcd.obj
+.\Release\vxdiface.obj
+.\Release\HFVExplorer.res>
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" 
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AskDir.cpp
+AskDump.cpp
+AskNewVolume.cpp
+AskProperties.cpp
+AskVolumeToFloppy.cpp
+aspecial.c
+Bndl.cpp
+cache.cpp
+CFATVolume.cpp
+charset.c
+DynCopyModeSelect.cpp
+eject_nt.cpp
+eject_w95.cpp
+FileTypeMapping.cpp
+floppy.cpp
+HFVCommandLineInfo.cpp
+HFVExplorer.cpp
+HFVExplorerDoc.cpp
+HFVExplorerListView.cpp
+HFVExplorerTreeView.cpp
+HFVExplorerView.cpp
+HFVPreviewView.cpp
+icon.cpp
+mactypes.cpp
+MainFrm.cpp
+openfile.cpp
+OptionsPage1.cpp
+OptionsPage10.cpp
+OptionsPage2.cpp
+OptionsPage3.cpp
+OptionsPage4.cpp
+OptionsPage5.cpp
+OptionsPage6.cpp
+OptionsPage7.cpp
+OptionsPage8.cpp
+OptionsPage9.cpp
+OptionsSheet.cpp
+part.cpp
+shell.cpp
+special.cpp
+utils.cpp
+vmacpatch.c
+binhex.c
+block.c
+btree.c
+copyhfs.c
+copyin.c
+copyout.c
+C:\HFVExplorer_1.3.1_vs5\hfs\copyout.c(606) : warning C4101: 'buf' : unreferenced local variable
+crc.c
+data.c
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\data.c(132) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\data.c(133) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\data.c(134) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\data.c(135) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+file.c
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\file.c(150) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\file.c(430) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+hcopy.c
+hcwd.c
+hfs.c
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c(558) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c(1033) : warning C4018: '!=' : signed/unsigned mismatch
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c(1114) : warning C4018: '!=' : signed/unsigned mismatch
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c(1419) : warning C4018: '>' : signed/unsigned mismatch
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\hfs.c(1901) : warning C4018: '==' : signed/unsigned mismatch
+low.c
+C:\HFVExplorer_1.3.1_vs5\hfs\libhfs\low.c(204) : warning C4018: '>=' : signed/unsigned mismatch
+node.c
+record.c
+volume.c
+filehook.c
+interface.c
+ntcd.cpp
+vxdiface.c
+Linking...
+
+
+
+HFVExplorer.exe - 0 error(s), 13 warning(s)

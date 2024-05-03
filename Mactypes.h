@@ -387,7 +387,7 @@ public:
 
 	int Open( CHFVVolume *pvol );
 	void Close();
-	LONGLONG Seek( LONG lOff, UINT nFrom );
+	LONG Seek( LONG lOff, UINT nFrom );
 	UINT Read( void* lpBuf, UINT nCount );
 	int intern_open();
 	int open_special( CHFVVolume *pvol, int which );
@@ -423,9 +423,9 @@ public:
 		CFileException* pError = NULL);
 	void Close();
 	BOOL GetStatus( CFileStatus& rStatus );
-	LONGLONG Seek(LONG lOff, UINT nFrom);
+	LONG Seek(LONG lOff, UINT nFrom);
 	UINT Read(void* lpBuf, UINT nCount);
-	ULONGLONG GetLength(void);
+	DWORD GetLength(void);
 
 	int m_drive;
 	HANDLE m_hfloppy;
