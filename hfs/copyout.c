@@ -53,6 +53,10 @@ extern int crlf_translation;
 
 char *cpo_error = "no error";
 
+#ifndef _MAX_PATH
+#define _MAX_PATH 32
+#endif
+
 static char m_last_opened_file[_MAX_PATH];
 
 void copyout_set_last_open_file( const char *path )

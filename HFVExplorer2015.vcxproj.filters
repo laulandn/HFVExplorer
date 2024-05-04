@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e95d741f-def0-45d0-ae33-df3c9518f9d1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{7f876c1d-7660-43d5-bfa3-464c73a082cb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{d8062d3b-a3d2-4398-bd5b-db7505aa7159}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Hfs utils">
+      <UniqueIdentifier>{c149a06e-025e-4dee-8937-f798abf0b858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{9220c32f-debc-41e8-a0df-aefbe8e4b6e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{4ae5226d-f584-4927-a63c-f72913ad1c40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AskDir.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AskDump.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AskNewVolume.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AskProperties.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AskVolumeToFloppy.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="aspecial.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Bndl.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="cache.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CFATVolume.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="charset.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DynCopyModeSelect.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="eject_nt.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="eject_w95.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTypeMapping.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="floppy.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVCommandLineInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVExplorer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVExplorerDoc.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVExplorerListView.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVExplorerTreeView.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVExplorerView.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HFVPreviewView.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="icon.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="mactypes.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="openfile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage1.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage10.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage2.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage3.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage4.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage5.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage6.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage7.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage8.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsPage9.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsSheet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="part.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="shell.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="special.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="vmacpatch.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\binhex.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\block.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\btree.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\copyhfs.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\copyin.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\copyout.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\crc.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\data.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\file.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\hcopy.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\hcwd.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\hfs.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\low.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\node.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\record.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\libhfs\volume.c">
+      <Filter>Hfs utils</Filter>
+    </ClCompile>
+    <ClCompile Include="filehook.c">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\interface.c">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="sys\ntcd.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="vxdiface.c">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Docs\lock.c">
+      <Filter>Doc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arrow.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="arrowcop.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res\HFVExplorer.rc2">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\WINNT\HFVExplorer.INI" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HFVExplorer.rc">
+      <Filter>Core</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adouble.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AskDir.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AskDump.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AskNewVolume.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AskProperties.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AskVolumeToFloppy.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="bndl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CFATVolume.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DynCopyModeSelect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="eject_w95.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTypeMapping.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="floppy.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ftypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVCommandLineInfo.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVExplorer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVExplorerDoc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVExplorerListView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVExplorerTreeView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVExplorerView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HFVPreviewView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mactypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="openfile.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage1.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage10.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage3.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage4.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage5.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage6.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage7.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage8.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsPage9.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsSheet.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="own_ids.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="part.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="shell.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="special.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\HFVExplorer.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\HFVExplorerDoc.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00002.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00003.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00004.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00005.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00006.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00007.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00008.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00009.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ico00010.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon10.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon11.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon12.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon13.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon14.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon3.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon4.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon5.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon52.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon53.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon54.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon55.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon56.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon57.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon6.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon7.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon8.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\icon9.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\idr_hfve.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\label_co.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\label_ho.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\label_in.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\label_pe.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\label_pr.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\mainfram.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shipping\Current\Ideas and notes.txt">
+      <Filter>Doc</Filter>
+    </Text>
+    <Text Include="shipping\Current\README.TXT">
+      <Filter>Doc</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\HFVExplorer.hpj">
+      <Filter>Core</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -152,8 +152,8 @@ HRESULT CreateLink (
     if (SUCCEEDED(hres)) { 
       WORD wsz[MAX_PATH]; 
       MultiByteToWideChar( 
-						CP_ACP, 0, lpszPathLink, -1, wsz, MAX_PATH); 
-			hres = ppf->Save((LPCOLESTR)wsz, TRUE); 
+						CP_ACP, 0, lpszPathLink, -1, (LPWSTR)wsz, MAX_PATH); 
+			hres = ppf->Save((LPWSTR)wsz, TRUE); 
       ppf->Release(); 
     } 
 

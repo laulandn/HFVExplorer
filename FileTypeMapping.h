@@ -93,7 +93,7 @@ protected:
 	);
 	*/
 	void import( CString & path );
-	void export( CString & path, BOOL selected_items );
+	void export1( CString & path, BOOL selected_items );
 	// CString make_default_fname( void );
 	CString ask_save_fname( void );
 	CString ask_open_fname( void );

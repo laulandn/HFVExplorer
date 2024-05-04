@@ -52,8 +52,8 @@ void ReplaceCharacters( CString *s, char from_ch, char to_ch )
 	}
 }
 
-const fat_char = '\\';
-const hfs_char = ':';
+const char fat_char = '\\';
+const char hfs_char = ':';
 
 char get_system_char( int system )
 {

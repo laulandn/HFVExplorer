@@ -75,7 +75,7 @@ public:
 	void MountPath( char *name );
 	void go_home_dir( void );
 	void WaitEmulator( char *name1, char *name2 );
-	void WaitEmulator2( 
+	void WaitEmulator2(
 		HANDLE process,
 		LPCSTR doc_win_name,
 		LPCSTR srcvolpath,
@@ -94,7 +94,7 @@ protected:  // control bar embedded members
 	BOOL m_was_zoomed;
 	char m_waiting_emulator1[100];
 	char m_waiting_emulator2[100];
-	
+
 	// Pointers to wait_item_struct
 	CDWordArray m_wait_items;
 
@@ -119,7 +119,7 @@ protected:
 	afx_msg void OnViewList();
 	afx_msg void OnViewSmallicons();
 	afx_msg void OnViewOptions();
-	afx_msg void OnActivateApp(BOOL bActive, HTASK hTask);
+	afx_msg void OnActivateApp(BOOL bActive, DWORD hTask);
 	afx_msg void OnTimer(UINT nIDEvent);
 	afx_msg BOOL OnQueryNewPalette();
 	afx_msg void OnPaletteChanged(CWnd* pFocusWnd);

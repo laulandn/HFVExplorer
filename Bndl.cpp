@@ -222,7 +222,7 @@ void CHFVExplorerDoc::load_hash_table()
 			}
 		}
 		if(fp->Read( &ints3, sizeof(ints3) ) != sizeof(ints3)) break;
-		ip16.small = ints3.i1;
+		ip16.small1 = ints3.i1;
 		ip16.iscolor = ints3.i2;
 		ip16.dim = ints3.i3;
 
@@ -243,7 +243,7 @@ void CHFVExplorerDoc::load_hash_table()
 			}
 		}
 		if(fp->Read( &ints3, sizeof(ints3) ) != sizeof(ints3)) break;
-		ip32.small = ints3.i1;
+		ip32.small1 = ints3.i1;
 		ip32.iscolor = ints3.i2;
 		ip32.dim = ints3.i3;
 
@@ -322,7 +322,7 @@ void CHFVExplorerDoc::save_hash_table(
 			fp->Write( ip16->color_icon_mask, ip16->bytes );
 		}
 	}
-	fp->Write( &ip16->small, sizeof(ip16->small) );
+	fp->Write( &ip16->small1, sizeof(ip16->small1) );
 	fp->Write( &ip16->iscolor, sizeof(ip16->iscolor) );
 	fp->Write( &ip16->dim, sizeof(ip16->dim) );
 
@@ -337,7 +337,7 @@ void CHFVExplorerDoc::save_hash_table(
 			fp->Write( ip32->color_icon_mask, ip32->bytes );
 		}
 	}
-	fp->Write( &ip32->small, sizeof(ip32->small) );
+	fp->Write( &ip32->small1, sizeof(ip32->small1) );
 	fp->Write( &ip32->iscolor, sizeof(ip32->iscolor) );
 	fp->Write( &ip32->dim, sizeof(ip32->dim) );
 	}
@@ -871,14 +871,14 @@ void CHFVExplorerDoc::create_cache_icon(
 		p = (unsigned char *)GlobalLock( dat->h );
 
 		if(dat->iscolor) {
-			dat->bytes = dat->small ? (COLORICONSIZE>>2) : COLORICONSIZE;
+			dat->bytes = dat->small1 ? (COLORICONSIZE>>2) : COLORICONSIZE;
 			dat->icon = map_colors( 
 				(unsigned char *)p, 
-				dat->small, 
+				dat->small1, 
 				dat->bytes, 
 				&dat->color_icon_mask );
 		} else {
-			dat->bytes = dat->small ? (BW_ICONSIZE>>2) : BW_ICONSIZE;
+			dat->bytes = dat->small1 ? (BW_ICONSIZE>>2) : BW_ICONSIZE;
 			half = dat->bytes >> 1;
 
 			// dump_data( (unsigned char *)"c:\\koe2.txt", p, 1024 );
@@ -904,24 +904,24 @@ void CHFVExplorerDoc::mac_load_icon2(
 	int volinx, 
 	CatDataRec *pCDR,
 	Integer id, 
-	int small,
+	int small1,
 	local_icn_sharp_t *dat )
 {
 	dat->h = 0;
 	dat->icon = 0;
-	dat->dim = small ? 16 : 32;
+	dat->dim = small1 ? 16 : 32;
 	dat->iscolor = 0;
-	dat->small = small;
+	dat->small1 = small1;
 	dat->color_icon_mask = 0;
 
 #ifdef NO_SMALL_ICONS
-	if(small) return;
+	if(small1) return;
 #endif
 
 	if(m_bits_per_pixel >= 8) {
 		dat->h = mac_load_any_resource ( 
 					volinx, pCDR,
-					dat->small ? (unsigned long)'ics8' :	(unsigned long)'icl8',
+					dat->small1 ? (unsigned long)'ics8' :	(unsigned long)'icl8',
 					0, id );
 	}
 	if(dat->h) {
@@ -930,7 +930,7 @@ void CHFVExplorerDoc::mac_load_icon2(
 		dat->h = mac_load_any_resource( 
 					volinx,
 					pCDR,
-					small ? (unsigned long)'ics#' : (unsigned long)'ICN#',
+					small1 ? (unsigned long)'ics#' : (unsigned long)'ICN#',
 					0, id );
 	}
 	create_cache_icon( dat, 1 );
@@ -940,24 +940,24 @@ void CHFVExplorerDoc::mac_load_icon3(
 	CFile *fp,
 	unsigned long g_offset,
 	Integer id, 
-	int small,
+	int small1,
 	local_icn_sharp_t *dat )
 {
 	dat->h = 0;
 	dat->icon = 0;
-	dat->dim = small ? 16 : 32;
+	dat->dim = small1 ? 16 : 32;
 	dat->iscolor = 0;
-	dat->small = small;
+	dat->small1 = small1;
 	dat->color_icon_mask = 0;
 
 #ifdef NO_SMALL_ICONS
-	if(small) return;
+	if(small1) return;
 #endif
 
 	if(m_bits_per_pixel >= 8) {
 		dat->h = mac_load_any_resource2 ( 
 					fp, g_offset,
-					dat->small ? (unsigned long)'ics8' :	(unsigned long)'icl8',
+					dat->small1 ? (unsigned long)'ics8' :	(unsigned long)'icl8',
 					0, id );
 	}
 	if(dat->h) {
@@ -965,7 +965,7 @@ void CHFVExplorerDoc::mac_load_icon3(
 	} else {
 		dat->h = mac_load_any_resource2 ( 
 					fp, g_offset,
-					dat->small ? (unsigned long)'ics#' : (unsigned long)'ICN#',
+					dat->small1 ? (unsigned long)'ics#' : (unsigned long)'ICN#',
 					0, id );
 	}
 	create_cache_icon( dat, 1 );

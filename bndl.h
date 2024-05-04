@@ -49,7 +49,7 @@ typedef struct
 	int iscolor;
 	int dim;
 	int bytes;
-	int small;
+	int small1;
 	unsigned char *color_icon_mask;
 } local_icn_sharp_t;
 

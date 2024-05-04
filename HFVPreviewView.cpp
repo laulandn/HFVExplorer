@@ -208,7 +208,7 @@ void CHFVPreviewView::show_contents( CDC *pdc, int *px, int *py, CRect *prect )
 	*py += m_lineheight;
 }
 
-const MINSHOWSIZE = 10;
+const int MINSHOWSIZE = 10;
 
 void CHFVPreviewView::OnPaint() 
 {

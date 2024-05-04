@@ -47,7 +47,7 @@ END_MESSAGE_MAP()
 
 CHFVExplorerView::CHFVExplorerView()
 {
-	CView::CView();
+	//CView::CView();
 }
 
 CHFVExplorerView::~CHFVExplorerView()

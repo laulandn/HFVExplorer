@@ -1,0 +1,27 @@
+--------------------Configuration: HFVExplorer - Win32 Release--------------------
+Begining build with project "C:\hfve\HFVExplorer5.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /Ot /Oi /Ob2 /D "__EMX__" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Release/" /Fp".\Release/HFVExplorer5.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x40b /fo".\Release/HFVExplorer.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o".\Release/HFVExplorer5.bsc" "
+			"COFF Linker for 80x86" with flags "winmm.lib /nologo /subsystem:windows /incremental:no /pdb:".\Release/HFVExplorer5.pdb" /machine:I386 /out:".\Release/HFVExplorer5.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.bat" with contents <@echo off
+".\makehelp.bat"
+>
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.bat" 
+Making help file...
+Building Win32 Help files
+
+The system cannot find the file specified.
+The system cannot find the file specified.
+
+
+
+
+HFVExplorer5.exe - 0 error(s), 0 warning(s)

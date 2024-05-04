@@ -67,7 +67,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_COMMAND(ID_VIEW_SMALLICONS, OnViewSmallicons)
 	ON_COMMAND(ID_VIEW_OPTIONS, OnViewOptions)
 	ON_WM_ACTIVATEAPP()
-	ON_WM_TIMER()
+	/*ON_WM_TIMER()*/
 	ON_WM_QUERYNEWPALETTE()
 	ON_WM_PALETTECHANGED()
 	ON_WM_DROPFILES()
@@ -485,7 +485,7 @@ void CMainFrame::OnViewOptions()
 	OnProgramProperties();
 }
 
-void CMainFrame::OnActivateApp(BOOL bActive, HTASK hTask) 
+void CMainFrame::OnActivateApp(BOOL bActive, DWORD hTask) 
 {
 	CFrameWnd::OnActivateApp(bActive, hTask);
 	

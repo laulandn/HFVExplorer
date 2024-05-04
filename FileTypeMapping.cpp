@@ -480,12 +480,12 @@ void CFileTypeMapping::OnFiletypeImport()
 
 void CFileTypeMapping::OnFiletypeExport() 
 {
-	export( ask_save_fname(), FALSE );
+	export1( ask_save_fname(), FALSE );
 }
 
 void CFileTypeMapping::OnFiletypeExportSelected() 
 {
-	export( ask_save_fname(), TRUE );
+	export1( ask_save_fname(), TRUE );
 }
 
 BOOL CFileTypeMapping::OnInitDialog() 
@@ -547,7 +547,7 @@ BOOL CFileTypeMapping::OnInitDialog()
 
 void CFileTypeMapping::OnOK() 
 {
-	export( make_default_fname(), FALSE );
+	export1( make_default_fname(), FALSE );
 	CDialog::OnOK();
 	m_enabled_param = m_enabled;
 }
@@ -684,7 +684,7 @@ void CFileTypeMapping::import( CString & path )
 	}
 }
 
-void CFileTypeMapping::export( CString & path, BOOL selected_items ) 
+void CFileTypeMapping::export1( CString & path, BOOL selected_items ) 
 {
 	CFile f;
 	CString line;

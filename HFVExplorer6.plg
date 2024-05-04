@@ -1,0 +1,191 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HFVExplorer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.bat" with contents
+[
+@echo off
+".\makehelp.bat"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.bat"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "__EMX__" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Debug/" /Fp".\Debug/HFVExplorer6.pch" /YX /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"C:\hfve\OptionsPage9.cpp"
+"C:\hfve\OptionsSheet.cpp"
+"C:\hfve\part.cpp"
+"C:\hfve\shell.cpp"
+"C:\hfve\special.cpp"
+"C:\hfve\utils.cpp"
+"C:\hfve\vmacpatch.c"
+"C:\hfve\hfs\binhex.c"
+"C:\hfve\hfs\libhfs\block.c"
+"C:\hfve\hfs\libhfs\btree.c"
+"C:\hfve\hfs\copyhfs.c"
+"C:\hfve\hfs\copyin.c"
+"C:\hfve\hfs\copyout.c"
+"C:\hfve\hfs\crc.c"
+"C:\hfve\hfs\libhfs\data.c"
+"C:\hfve\hfs\libhfs\file.c"
+"C:\hfve\hfs\hcopy.c"
+"C:\hfve\hfs\hcwd.c"
+"C:\hfve\hfs\libhfs\hfs.c"
+"C:\hfve\hfs\libhfs\low.c"
+"C:\hfve\hfs\libhfs\node.c"
+"C:\hfve\hfs\libhfs\record.c"
+"C:\hfve\hfs\libhfs\volume.c"
+"C:\hfve\filehook.c"
+"C:\hfve\hfs\interface.c"
+"C:\hfve\sys\ntcd.cpp"
+"C:\hfve\vxdiface.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp" 
+Making help file...
+Building Win32 Help files
+
+The system cannot find the file specified.
+The system cannot find the file specified.
+
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:".\Debug/HFVExplorer6.pdb" /debug /machine:I386 /out:".\Debug/HFVExplorer6.exe" 
+.\Debug\AskDir.obj
+.\Debug\AskDump.obj
+.\Debug\AskNewVolume.obj
+.\Debug\AskProperties.obj
+.\Debug\AskVolumeToFloppy.obj
+.\Debug\aspecial.obj
+.\Debug\Bndl.obj
+.\Debug\cache.obj
+.\Debug\CFATVolume.obj
+.\Debug\charset.obj
+.\Debug\DynCopyModeSelect.obj
+.\Debug\eject_nt.obj
+.\Debug\eject_w95.obj
+.\Debug\FileTypeMapping.obj
+.\Debug\floppy.obj
+.\Debug\HFVCommandLineInfo.obj
+.\Debug\HFVExplorer.obj
+.\Debug\HFVExplorerDoc.obj
+.\Debug\HFVExplorerListView.obj
+.\Debug\HFVExplorerTreeView.obj
+.\Debug\HFVExplorerView.obj
+.\Debug\HFVPreviewView.obj
+.\Debug\icon.obj
+.\Debug\mactypes.obj
+.\Debug\MainFrm.obj
+.\Debug\openfile.obj
+.\Debug\OptionsPage1.obj
+.\Debug\OptionsPage10.obj
+.\Debug\OptionsPage2.obj
+.\Debug\OptionsPage3.obj
+.\Debug\OptionsPage4.obj
+.\Debug\OptionsPage5.obj
+.\Debug\OptionsPage6.obj
+.\Debug\OptionsPage7.obj
+.\Debug\OptionsPage8.obj
+.\Debug\OptionsPage9.obj
+.\Debug\OptionsSheet.obj
+.\Debug\part.obj
+.\Debug\shell.obj
+.\Debug\special.obj
+.\Debug\StdAfx.obj
+.\Debug\utils.obj
+.\Debug\vmacpatch.obj
+.\Debug\binhex.obj
+.\Debug\block.obj
+.\Debug\btree.obj
+.\Debug\copyhfs.obj
+.\Debug\copyin.obj
+.\Debug\copyout.obj
+.\Debug\crc.obj
+.\Debug\data.obj
+.\Debug\file.obj
+.\Debug\hcopy.obj
+.\Debug\hcwd.obj
+.\Debug\hfs.obj
+.\Debug\low.obj
+.\Debug\node.obj
+.\Debug\record.obj
+.\Debug\volume.obj
+.\Debug\filehook.obj
+.\Debug\interface.obj
+.\Debug\ntcd.obj
+.\Debug\vxdiface.obj
+.\Debug\HFVExplorer.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+OptionsPage9.cpp
+c:\hfve\resource.h(213) : warning C4005: 'ID_VIEW_LIST' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(270) : see previous definition of 'ID_VIEW_LIST'
+c:\hfve\resource.h(214) : warning C4005: 'ID_VIEW_DETAILS' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(271) : see previous definition of 'ID_VIEW_DETAILS'
+OptionsSheet.cpp
+c:\hfve\resource.h(213) : warning C4005: 'ID_VIEW_LIST' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(270) : see previous definition of 'ID_VIEW_LIST'
+c:\hfve\resource.h(214) : warning C4005: 'ID_VIEW_DETAILS' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(271) : see previous definition of 'ID_VIEW_DETAILS'
+part.cpp
+shell.cpp
+special.cpp
+utils.cpp
+c:\hfve\resource.h(213) : warning C4005: 'ID_VIEW_LIST' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(270) : see previous definition of 'ID_VIEW_LIST'
+c:\hfve\resource.h(214) : warning C4005: 'ID_VIEW_DETAILS' : macro redefinition
+        c:\program files\microsoft visual studio\vc98\mfc\include\afxres.h(271) : see previous definition of 'ID_VIEW_DETAILS'
+vmacpatch.c
+binhex.c
+block.c
+btree.c
+copyhfs.c
+copyin.c
+c:\hfve\hfs\copyin.c(584) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+c:\hfve\hfs\copyin.c(732) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+copyout.c
+c:\hfve\hfs\copyout.c(522) : warning C4101: 'buf' : unreferenced local variable
+crc.c
+data.c
+c:\hfve\hfs\libhfs\data.c(132) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+c:\hfve\hfs\libhfs\data.c(133) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+c:\hfve\hfs\libhfs\data.c(134) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+c:\hfve\hfs\libhfs\data.c(135) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+file.c
+c:\hfve\hfs\libhfs\file.c(150) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+c:\hfve\hfs\libhfs\file.c(430) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+hcopy.c
+c:\hfve\hfs\hcopy.c(91) : warning C4550: expression evaluates to a function which is missing an argument list
+c:\hfve\hfs\hcopy.c(166) : warning C4550: expression evaluates to a function which is missing an argument list
+c:\hfve\hfs\hcopy.c(170) : warning C4550: expression evaluates to a function which is missing an argument list
+c:\hfve\hfs\hcopy.c(172) : warning C4550: expression evaluates to a function which is missing an argument list
+c:\hfve\hfs\hcopy.c(174) : warning C4550: expression evaluates to a function which is missing an argument list
+hcwd.c
+hfs.c
+c:\hfve\hfs\libhfs\hfs.c(558) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+c:\hfve\hfs\libhfs\hfs.c(1033) : warning C4018: '!=' : signed/unsigned mismatch
+c:\hfve\hfs\libhfs\hfs.c(1114) : warning C4018: '!=' : signed/unsigned mismatch
+c:\hfve\hfs\libhfs\hfs.c(1419) : warning C4018: '>' : signed/unsigned mismatch
+c:\hfve\hfs\libhfs\hfs.c(1901) : warning C4018: '==' : signed/unsigned mismatch
+low.c
+c:\hfve\hfs\libhfs\low.c(204) : warning C4018: '>=' : signed/unsigned mismatch
+node.c
+record.c
+volume.c
+filehook.c
+interface.c
+ntcd.cpp
+vxdiface.c
+Linking...
+
+
+
+<h3>Results</h3>
+HFVExplorer6.exe - 0 error(s), 26 warning(s)
+</pre>
+</body>
+</html>

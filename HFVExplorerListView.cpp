@@ -1611,7 +1611,7 @@ int CHFVExplorerListView::new_bowser_on( CString start_dir )
 
 void make_configur_path( char *cmd, CString *ppath, CString &creator )
 {
-	char small[10];
+	char small1[10];
 	char name[300];
 	unsigned char *cr;
 	char *p;
@@ -1627,8 +1627,8 @@ void make_configur_path( char *cmd, CString *ppath, CString &creator )
 			strcat( name, "\\CONFIGUR\\" );
 			cr = (unsigned char *)creator.GetBuffer(MAX_PATH);
 			for(i=0; i<4; i++) {
-				sprintf( small, "%02x", (int)cr[i] );
-				strcat( name, small );
+				sprintf( small1, "%02x", (int)cr[i] );
+				strcat( name, small1 );
 			}
 			creator.ReleaseBuffer();
 			strcat( name, ".ECF" );
@@ -2000,9 +2000,9 @@ void make_shortcut_name( LPCSTR objpath, LPSTR linkname )
 
 	ismac = is_mac_path(CString(objpath));
 	if(ismac) {
-		p = strrchr( objpath, ':' );
+		p = (char *)strrchr( objpath, ':' );
 	} else {
-		p = strrchr( objpath, '\\' );
+		p = (char *)strrchr( objpath, '\\' );
 	}
 	if(p) {
 		p++;
